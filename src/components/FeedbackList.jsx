@@ -4,9 +4,13 @@ function FeedbackList({ feedbackArray, handleDelete }) {
 	return (
 		<div className='feedback-list'>
 			{feedbackArray && feedbackArray.length > 0 ? (
-        feedbackArray.map((feedback) => (
-          <FeedbackItem feedback={feedback} handleDelete={handleDelete} />
-        ))
+				feedbackArray.map(feedback => (
+					<FeedbackItem
+						key={`feedback-id-${feedback.id}`}
+						feedback={feedback}
+						handleDelete={handleDelete}
+					/>
+				))
 			) : (
 				<p>No Feedback Yet</p>
 			)}
