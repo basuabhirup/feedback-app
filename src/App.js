@@ -3,6 +3,7 @@ import Header from './components/Header'
 import FeedbackStats from './components/FeedbackStats'
 import FeedbackList from './components/FeedbackList'
 import FeedbackData from './data/FeedbackData'
+import FeedbackForm from './components/FeedbackForm'
 
 function App() {
 	const [feedbackArray, setFeedbackArray] = useState(FeedbackData)
@@ -16,6 +17,7 @@ function App() {
 		<Fragment>
 			<Header />
 			<div className='container'>
+				<FeedbackForm />
 				<FeedbackStats feedbackArray={feedbackArray} />
 				<FeedbackList
 					feedbackArray={feedbackArray}
