@@ -5,6 +5,7 @@ import FeedbackStats from './components/FeedbackStats'
 import FeedbackList from './components/FeedbackList'
 import FeedbackData from './data/FeedbackData'
 import FeedbackForm from './components/FeedbackForm'
+import AboutIconLink from './components/AboutIconLink'
 import AboutPage from './pages/AboutPage'
 import { v4 as uuidv4 } from 'uuid'
 
@@ -38,6 +39,7 @@ function App() {
 									feedbackArray={feedbackArray}
 									handleDelete={deleteFeedback}
 								/>
+								<AboutIconLink />
 							</>
 						}
 					/>
